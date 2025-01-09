@@ -1,0 +1,62 @@
+.currencyTab {
+    width: 100%;
+    background: linear-gradient(180deg, #2F15B0 0%, #4A2B99 100%);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tableWrapper {
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .currencyTable {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .currencyTable thead {
+    background: rgba(47, 21, 176, 0.73);
+    backdrop-filter: blur(4px);
+  }
+  
+  .currencyTable th {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .currencyTable td {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  .currencyTable tbody tr {
+    transition: background-color 0.2s;
+  }
+  
+  .currencyTable tbody tr:hover {
+    background: rgba(115, 74, 239, 0.3);
+  }
+  
+  .backgroundSvg {
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  
+  @media (min-width: 1280px) {
+    .currencyTab {
+      margin: 3rem 0 0 0;
+    }
+  }
+  
+  

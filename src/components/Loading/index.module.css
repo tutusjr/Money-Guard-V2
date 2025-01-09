@@ -1,0 +1,47 @@
+.loadingContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    animation: bounce 0.5s infinite alternate;
+}
+
+
+.dot:nth-child(2){
+    animation-delay: 100ms;
+}
+
+.dot:nth-child(3){
+    animation-delay: 200ms;
+}
+
+@keyframes bounce{
+
+    100%{
+        translate: 0 -10px;
+    }
+}

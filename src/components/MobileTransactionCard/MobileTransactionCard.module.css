@@ -1,0 +1,83 @@
+.mobileCard {
+    background: rgba(82, 59, 126, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    border-left: 4px solid #734AEF;
+  }
+  
+  .cardContent {
+    padding: 12px 20px;
+  }
+  
+  .cardRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .cardRow:last-child {
+    border-bottom: none;
+  }
+  
+  .cardLabel {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .cardValue {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+  }
+  
+  .typeExpense {
+    color: #FF6596;
+  }
+  
+  .typeIncome {
+    color: #24CCA7;
+  }
+  
+  .sumPositive {
+    color: #24CCA7;
+  }
+  
+  .sumNegative {
+    color: #FF6596;
+  }
+  
+  .cardActions {
+    display: flex;
+    gap: 8px;
+    padding: 12px 20px;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .editBtn {
+    background: transparent;
+    border: none;
+    color: #9e40ba;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  .deleteBtn {
+    background: linear-gradient(97deg, #FFC727 0%, #9E40BA 61%, #7000FF 91%);
+    border: none;
+    border-radius: 18px;
+    padding: 4px 12px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  

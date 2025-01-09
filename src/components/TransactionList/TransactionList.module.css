@@ -1,0 +1,103 @@
+.tableContainer {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  padding: 0;
+  position: relative;
+}
+
+.tableWrapper {
+  display: none;
+}
+
+.transactionTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  background: transparent;
+}
+
+.transactionTable thead tr {
+  background: rgba(82, 59, 126, 0.6);
+}
+
+.transactionTable th {
+  padding: 16px;
+  color: #FBFBFB;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+
+.transactionTable th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.transactionTable th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.transactionTable td {
+  padding: 16px;
+  /* background: rgba(82, 59, 126, 0.6); */
+}
+
+.transactionTable tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.transactionTable tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mobileWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(97deg, #FFC727 0%, #9E40BA 61%, #7000FF 91%);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(158, 64, 186, 0.35);
+  transition: transform 0.2s;
+  z-index: 100;
+}
+
+.addButton:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .tableContainer {
+    padding: 0;
+  }
+
+  .tableWrapper {
+    display: block;
+  }
+
+  .mobileWrapper {
+    display: none;
+  }
+  .addButton{
+    right: 40px;
+  }
+}
+

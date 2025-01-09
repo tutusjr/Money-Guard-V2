@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.modal-container{
+    height: 400px;
+    width: min-content;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: green;
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.category-select-box {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF99;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .category-select-box option {
+    background-color: rgb(156, 128, 209);
+    color: white;
+    padding: 12px;
+  }
+  .category-select-box option:hover {
+    color: #FF868D;
+  }
+  /* Remove default arrow in IE */
+  .category-select-box::-ms-expand {
+    display: none;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

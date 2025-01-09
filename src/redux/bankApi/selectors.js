@@ -1,0 +1,1 @@
+export const selectedCurrency = state => state.bankApi.currency;

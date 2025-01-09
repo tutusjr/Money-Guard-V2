@@ -1,0 +1,15 @@
+.chartContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.h3 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.doughnut {
+  box-shadow: 0px 0px 8px 0px hsba(0, 0%, 0%, 1) inset;
+}

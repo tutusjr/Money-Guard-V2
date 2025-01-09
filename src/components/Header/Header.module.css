@@ -1,0 +1,56 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:  linear-gradient(270.02deg, #2E1746 3.2%, #2E225F 99.98%);;
+    color: #fff;
+}
+
+.HeaderImage {
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.HeaderUserSection {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.HeaderUserName {
+    margin-right: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.HeaderExitIcon{
+    width: 18px;
+    height: 18px;
+
+}
+/*mobilde gizle*/
+.HeaderExitButton{
+    display: none; 
+}
+@media screen and (min-width: 768px){
+.HeaderExitButton {
+display: block;
+}
+.HeaderUserSection {
+display: flex;
+align-items: center;
+gap: 5px;
+/* Elemanlar arasında boşluk */
+}
+        
+.HeaderDivider {
+ width: 1px;
+height: 24px;
+background-color: #ccc;
+ /* Çizgi rengi */
+margin: 0 10px;
+/* Çizgi çevresindeki boşluk */
+}
+}

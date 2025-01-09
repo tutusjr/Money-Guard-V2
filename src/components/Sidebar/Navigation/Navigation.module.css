@@ -1,0 +1,99 @@
+.NavContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px 28px 16px;
+    background-color:  transparent;
+}
+.ActiveLink {
+    color: #734AEF;
+    font-weight: 700;
+}
+.NavList {
+   
+    
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.Icon{
+width: 40px;
+height: 40px;
+padding: 2px;
+color: #4A56E2; 
+background-color: #FFFFFF66;
+border-radius: 6px;
+}
+.NavCurrencyTitle{
+    display: none;
+}
+
+.Icon:hover{
+    color: white;
+    background-color: #734AEF;
+}
+.NavTitle{
+    display: none;
+}
+.CurrencyIcon{
+    width: 40px;
+        height: 40px;
+        padding: 2px;
+        color: #4A56E2;
+        background-color: #FFFFFF66;
+        border-radius: 6px
+
+}
+.CurrencyIcon:hover {
+    color: white;
+    background-color: #734AEF;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .Icon{
+        width: 24px;
+        height: 24px;
+    }
+    .CurrencyIcon {
+        display: none;
+        /* Sadece mobilde göster */
+    }
+    .NavItem :hover{
+        font-weight: 700;
+
+    }
+    .NavTitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: #FBFBFB;
+    }
+
+    
+    .NavContainer{
+        padding-left: 10px;
+       
+    }
+   
+    .NavList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+        .NavTitle {
+            display: block;
+        }
+        .NavCurrencyTitle{
+            display: none;
+        }
+        .IconTitleContainer{
+            display: flex;
+            gap: 23px;
+        }
+        
+}
+

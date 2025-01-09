@@ -1,0 +1,39 @@
+.statisticsTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto; /* Mobil cihazlarda yatay kaydırma için */
+  color: white;
+  background: transparent;
+}
+
+th,
+td {
+  padding: 8px;
+  font-size: 14px; /* Mobil cihazlar için daha küçük yazı boyutu */
+  text-align: center;
+}
+
+th {
+  background: rgba(82, 59, 126, 0.6);
+}
+
+/* Tablet ve üzeri cihazlar için */
+@media (min-width: 768px) {
+  th,
+  td {
+    padding: 10px;
+    font-size: 16px; /* Tabletler için yazı boyutu */
+  }
+}
+
+/* Masaüstü ve daha büyük ekranlar için */
+@media (min-width: 1280px) {
+  .statisticsTable {
+    margin: 0 auto; /* Ortalar */
+  }
+  th,
+  td {
+    padding: 12px;
+    font-size: 18px; /* Masaüstü için yazı boyutu */
+  }
+}
