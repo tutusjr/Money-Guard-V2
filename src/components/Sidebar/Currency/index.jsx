@@ -7,6 +7,12 @@ const CurrencyTab = () => {
 
   const currencies = useSelector(selectedCurrency)
 
+  console.log(currencies)
+
+  currencies.map((currency) => {
+    console.log(currency.Isim);
+  });
+
   return (
     <div className={styles.currencyTab}>
       <div className={styles.tableWrapper}>
@@ -19,11 +25,11 @@ const CurrencyTab = () => {
             </tr>
           </thead>
           <tbody>
-            {currencies.map((currency) => (
-              <tr key={currency.currencyCodeA}>
-                <td>{currency.currencyCodeA === 840 ? "USD" : "EUR"}</td>
-                <td>{currency.rateBuy.toFixed(2)}</td>
-                <td>{currency.rateSell.toFixed(2)}</td>
+            {currencies.map((currency, index) => (
+              <tr key={index}>
+                <td>{currency.CurrencyName}</td>
+                <td>{(currency.ForexBuying).toFixed(2)}</td>
+                <td>{Number(currency.ForexSelling).toFixed(2)}</td>
               </tr>
             ))}
           </tbody>

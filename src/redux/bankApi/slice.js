@@ -12,10 +12,12 @@ const bankApiSlice = createSlice({
     extraReducers: (builder => {
         builder.addCase(fetchBankCurrency.fulfilled, (state, action) => {
             state.currency = action.payload
+            state.status = "success"
         }).addCase(fetchBankCurrency.pending, (state) => {
             state.status = "loading"
         }).addCase(fetchBankCurrency.rejected, (state, action) => {
             state.error = action.payload
+            state.status = "rejected"
         })
     })
 })
